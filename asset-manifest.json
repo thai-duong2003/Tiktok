@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4845404.css",
+    "main.js": "/static/js/main.8e3b6e3f.js",
+    "static/js/787.474c25a6.chunk.js": "/static/js/787.474c25a6.chunk.js",
+    "static/media/Download2.mp4": "/static/media/Download2.8f32443902cd5deeaf10.mp4",
+    "static/media/backgrought_nopage.png": "/static/media/backgrought_nopage.532e06c8382fb6011df0.png",
+    "static/media/TikTokFont-Bold.woff2": "/static/media/TikTokFont-Bold.145f211a356fce76072d.woff2",
+    "static/media/TikTokFont-Semibold.woff2": "/static/media/TikTokFont-Semibold.0a3262809350126554ad.woff2",
+    "static/media/TikTokFont-Regular.woff2": "/static/media/TikTokFont-Regular.0ca75da985ad7821cbde.woff2",
+    "static/media/LauglImage.png": "/static/media/LauglImage.bbad6f99219877ac47f9.png",
+    "static/media/sofiapro-bold.woff": "/static/media/sofiapro-bold.086ed00f3060992f2938.woff",
+    "static/media/Proxima-Nova-Bold.woff": "/static/media/Proxima-Nova-Bold.6cd7dcaa6293ecf61e80.woff",
+    "static/media/Proxima-Nova-Regular.woff2": "/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
+    "static/media/Proxima-Nova-Semibold.woff2": "/static/media/Proxima-Nova-Semibold.c5632e80f6e35c93156f.woff2",
+    "static/media/logo.svg": "/static/media/logo.14788dbb20dc655d0dbaac43503d6b98.svg",
+    "index.html": "/index.html",
+    "main.a4845404.css.map": "/static/css/main.a4845404.css.map",
+    "main.8e3b6e3f.js.map": "/static/js/main.8e3b6e3f.js.map",
+    "787.474c25a6.chunk.js.map": "/static/js/787.474c25a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4845404.css",
+    "static/js/main.8e3b6e3f.js"
+  ]
+}
