@@ -1,0 +1,61 @@
+.wrapper.container {
+  width: 890px;
+  font-family: var(--tiktok-font);
+}
+.item {
+  font-weight: 800;
+  font-size: 15px;
+  background-color: rgba(22, 24, 35, 0.06);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 6px 15px;
+}
+.navbarblock {
+  display: flex;
+  margin: 18px 0;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.nav_list {
+  flex-shrink: 0;
+}
+
+.nolive {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  height: 450px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  justify-content: center;
+  h1 {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--tiktok-font);
+    font-size: 27px;
+  }
+  h3 {
+    font-weight: 700;
+    color: #ccc;
+    margin: 10px 0 25px;
+  }
+  button {
+    background: rgb(28 26 26 / 80%);
+    color: #fff;
+    padding: 9px 45px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    &:hover {
+      background-color: #333232;
+    }
+  }
+}

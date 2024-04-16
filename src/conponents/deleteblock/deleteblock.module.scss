@@ -1,0 +1,40 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 358px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 9px;
+  text-align: center;
+  h3 {
+    font-size: 25px;
+    padding: 34px 20px 20px 20px;
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 11px 0;
+    cursor: pointer;
+    font-size: 19px;
+    color: #2f2b2b;
+    background: transparent;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.delete_btn {
+  border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+}

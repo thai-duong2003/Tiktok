@@ -1,0 +1,47 @@
+.register {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.suggestfollow.container {
+  width: 670px;
+  margin-top: 25px;
+  .item {
+    height: 302px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .bgk_img {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .user {
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+  }
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: 1;
+}

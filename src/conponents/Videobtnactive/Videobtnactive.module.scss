@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.wrapper p {
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
+}
+.menu-popper {
+  border-radius: 14px;
+  position: relative;
+  box-shadow: rgb(0 0 0 / 25%) 0 7px 14px;
+  height: 286px;
+  &::after {
+    content: "";
+    display: block;
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    left: 35px;
+    top: 98%;
+  }
+}
+.cricle {
+  min-width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding: 0;
+  border-radius: 50%;
+  margin: 0;
+  font-size: 22px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.videodetailBtnactive {
+  flex-direction: row;
+  justify-content: start;
+  gap: 15px;
+  margin: 14px 0 14px 10px;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+}
+.wrapper.videodetailBtnactive button {
+  min-width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  span {
+    font-size: 15px;
+  }
+}

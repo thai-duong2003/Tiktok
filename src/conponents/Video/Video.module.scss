@@ -1,0 +1,69 @@
+.wrapper {
+  margin-top: 15px;
+  margin-left: 65px;
+  display: flex;
+  align-items: end;
+}
+.video {
+  width: 310px;
+  height: 526px;
+  position: relative;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+  }
+}
+.more-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 25px;
+  color: #fff;
+  opacity: 0.9;
+  padding: 2px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.control {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  width: 100%;
+  height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  .play button,
+  .volume button {
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--while);
+  }
+  .play svg:last-child {
+    width: 20px;
+    height: 20px;
+  }
+}
+.volume button svg:last-child {
+  width: 24px;
+  height: 240px;
+}
+.range {
+  -webkit-transition: 0.2s;
+  transform: rotate(-90deg);
+  -webkit-appearance: none;
+  height: 5px;
+  opacity: 0.7;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: red($color: #000000);
+}
+.range::-webkit-slider-runnable-track {
+  background-color: green;
+}

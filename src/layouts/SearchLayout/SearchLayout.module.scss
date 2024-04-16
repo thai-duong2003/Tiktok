@@ -1,0 +1,21 @@
+.container {
+  width: 650px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-family: "ProximaNova";
+  font-weight: bold;
+  color: #918787;
+  cursor: pointer;
+}
+.nav-pills {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+p.line {
+  height: 2px;
+  background: #000;
+  transition: all linear 1s;
+  border-radius: 6px;
+}

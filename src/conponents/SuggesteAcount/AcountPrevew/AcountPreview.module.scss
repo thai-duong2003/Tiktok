@@ -1,0 +1,67 @@
+.avata {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.following-btn {
+  padding: 6px 16px;
+}
+.check {
+  font-size: 1.4rem;
+  color: #20d5ec;
+  margin-left: 4px;
+}
+.wrapper {
+  padding: 20px;
+  width: 320px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body {
+  margin-top: 12px;
+  color: #161823;
+}
+.nickname {
+  font-size: 1.8rem;
+}
+.name {
+  font-size: 1.4rem;
+}
+.anakytics {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.value {
+  margin-right: 5px;
+}
+.value ~ .value {
+  // viet nhu nay cos nghiax la nos se an vao cai class " value " sau
+  margin-left: 20px;
+}
+.lable {
+  color: #161823bf;
+}
+.bodyshow {
+  .nickname {
+    line-height: 17px;
+    strong {
+      font-size: 2rem;
+    }
+  }
+  .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .anakytics {
+    font-size: 1.8rem;
+  }
+}
+p.slogan {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  padding-top: 12px;
+}

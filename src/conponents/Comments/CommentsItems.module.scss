@@ -1,0 +1,117 @@
+.wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  .user {
+    display: flex;
+    align-items: flex-start;
+  }
+  > div:last-child,
+  > div:last-child > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    & > div {
+      padding: 3px 0;
+    }
+  }
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.info {
+  width: 330px;
+  margin-left: 10px;
+  .name {
+    font-size: 1.4rem;
+    margin-right: 8px;
+    display: inline-block;
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .check {
+    color: rgb(32, 213, 236);
+  }
+}
+.contents {
+  display: flex;
+  align-items: flex-end;
+}
+.content > p:first-child {
+  overflow: hidden;
+  font-size: 15px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width: 285px;
+  word-break: break-word;
+}
+.daterep {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  margin-top: 5px;
+  cursor: pointer;
+  span:first-child {
+    margin-right: 10px;
+    cursor: default;
+    // width: 86px;
+    display: inline-block;
+    // overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.wrapper button {
+  &:hover {
+    color: var(--primary);
+  }
+
+  &:last-child {
+    display: none;
+  }
+}
+.info button:last-child {
+  display: block;
+}
+.repcomment {
+  padding-left: 50px;
+  .avatar {
+    width: 24px;
+    height: 24px;
+  }
+}
+.heart svg:last-child {
+  width: 20px;
+  height: 20px;
+}
+.viewreply {
+  margin: 8px 0 0 55px;
+  font-size: 15px;
+  position: relative;
+  opacity: 0.7;
+  cursor: pointer;
+  svg {
+    position: absolute;
+    bottom: -2px;
+    right: -20px;
+  }
+  span:hover {
+    text-decoration: underline;
+  }
+}
+.commentblock {
+  margin-bottom: 100px;
+}

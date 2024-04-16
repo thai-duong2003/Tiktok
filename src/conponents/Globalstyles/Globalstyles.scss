@@ -1,0 +1,119 @@
+@import "normalize.css";
+
+///nhung font
+@font-face {
+  font-family: ProximaNova;
+  src: url("/access/fonts/Proxima-Nova-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("/access/fonts/Proxima-Nova-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("/access/fonts/Proxima-Nova-Semibold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: sofiapro;
+  src: url("/access/fonts/sofiapro-bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: TikTokFont;
+  src: url("/access/fonts/TikTokFont-Bold.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: TikTokFont;
+  src: url("/access/fonts/TikTokFont-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: TikTokFont;
+  src: url("/access/fonts/TikTokFont-Semibold.woff2");
+  font-weight: 600;
+}
+
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --while: #fff;
+  --text-color: #161823;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --black_rgba0_1: rgba(0, 0, 0, 0.1);
+
+  --default-layout-head-height: 60px;
+  --default-layout-width: 1330px;
+  --default-layout-horizontal-spacer: 24px;
+  --default-layout-sidebar-width: 356px;
+
+  --font-famil: "ProximaNova", sans-serif;
+  --tiktok-font: "TikTokFont" Arial, Tahoma, PingFangSC, sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-famil);
+  font-size: 1.6em;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed; // để tôi ưu tốc độ hiển thị phông chữ ổn định
+  color: var(--black);
+  overflow-y: overlay; // làm bỏ ik cái phàn dày lên ỏ bên trai thanh quận
+}
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+.App a {
+  color: var(--black);
+  text-decoration: none;
+}
+p {
+  margin: 0 !important;
+}
+::-webkit-scrollbar {
+  //dặt kích thước cho sroll
+  border-radius: 0;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  //dặt cho thanh scroll dày
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  //dặt cho thanh scroll ngắn lăn tren thanh dày
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.tippy-box {
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  background-color: rgba(84, 84, 84, 0.9);
+}
+
+.tippy-arrow {
+  color: rgba(84, 84, 84, 0.9);
+}
+.tippy-content {
+  padding: 8px 9px;
+}

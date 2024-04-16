@@ -1,0 +1,55 @@
+.Menu-Item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 4px;
+  color: var(--text-color);
+  transition: background-color ease-in-out 200ms; //background-color : chỉ ra cái cụ thể cần tác động đến
+  &:hover {
+    background-color: rgba(24, 24, 35, 0.1);
+  }
+  &.active {
+    // cài cho the navlink
+    color: var(--primary);
+    .icon {
+      display: none;
+    }
+    .active-icon {
+      display: flex;
+    }
+  }
+  & > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 4px;
+  }
+}
+.title {
+  margin-left: 10px;
+}
+.icon,
+.active-icon {
+  display: flex;
+}
+.active-icon {
+  display: none;
+}
+
+//searchResuilpage
+.searchResuilpage.Menu-Item {
+  color: #918787;
+  padding: 12px 38px;
+  border-radius: 0;
+  &:hover {
+    background-color: inherit;
+  }
+  &.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+}

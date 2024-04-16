@@ -1,0 +1,78 @@
+.menu-list {
+  position: relative;
+  min-width: 224px;
+}
+.menu-popper .menu-item {
+  border-radius: 0;
+  font-weight: 500;
+  display: block;
+  text-align: start;
+  margin-left: 0 !important;
+  width: 100%;
+  line-height: 1.8rem;
+  font-weight: 600;
+  &.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.1);
+  }
+  &:hover {
+    background-color: #f2ecec;
+  }
+}
+.menu-item.morevideo {
+  font-size: 16px;
+  padding: 10px 25px;
+  .icon {
+    margin-left: 8px;
+  }
+}
+.menu-popper {
+  padding-bottom: 8px;
+}
+.menu-body {
+  overflow-y: auto;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.dak_mode {
+  width: 46px;
+  height: 24px;
+  background-color: #e1e1e6;
+  border-radius: 20px;
+  position: absolute;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+.dak_mode div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 4px;
+}
+
+//header
+.header {
+  position: relative;
+  flex-shrink: 0;
+  height: 50px;
+  margin-top: -8px;
+
+  button:hover {
+    background-color: #e1e1e6;
+  }
+}
+.back-btn {
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

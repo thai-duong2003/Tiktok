@@ -1,0 +1,114 @@
+.rigisterUser {
+  // position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .rigisterUser_Main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    position: relative;
+
+    .rigisterUser_Main-delete {
+      background-color: #f4f1f6;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+
+      span {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+    .header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      .leftArrow {
+        font-size: 22px;
+        padding: 3px 10px;
+        background: #f4f1f6;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+      }
+    }
+    .rigisterUser_Main-title {
+      height: 10%;
+
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .isFormValid {
+        color: red;
+      }
+
+      .isFormSuccess {
+        color: rgb(12, 192, 48);
+      }
+    }
+
+    .form {
+      width: 483px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  .rigisterUser_Main-submit button {
+    background-color: var(--primary);
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.account {
+  text-align: center;
+  transition: all linear 0.2s;
+  background-color: #fff;
+}
+.rigisterUserNone {
+  display: none;
+}
+.nextbtn {
+  margin-top: 17px;
+  display: block;
+  &.disible {
+    opacity: 0.6;
+  }
+}
+
+.nextslide {
+  .account {
+    transform: translateX(-100%);
+  }
+  .infoName {
+    transform: translateX(-100%);
+  }
+}
+
+.infoName {
+  transition: all linear 0.2s;
+  text-align: center;
+}

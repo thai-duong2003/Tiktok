@@ -1,0 +1,7 @@
+.loadmore {
+  display: flex;
+  justify-content: center;
+  &.loading {
+    margin-top: 100px;
+  }
+}

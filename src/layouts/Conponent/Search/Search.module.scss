@@ -1,0 +1,108 @@
+.search,
+.search-resuilt {
+  width: 500px;
+}
+.search {
+  position: relative;
+  background-color: #f1f1f2;
+  display: flex;
+  border: 1px solid transparent;
+  justify-content: space-between;
+  border-radius: 25px;
+  input {
+    font-family: var(--font-famil);
+    width: 80%;
+    padding: 5px 16px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin: 7px 0 7px 10px;
+  }
+  &:focus-within {
+    background-color: rgb(182, 176, 176);
+  }
+  input:valid ~ .search-btn {
+    color: var(--black);
+  }
+}
+.search-resuilt_title {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  color: rgba(22, 24, 35, 0.2);
+  font-weight: 600;
+}
+.clear {
+  border: none;
+  font-size: 15px;
+  padding: 2px 10px;
+  background-color: transparent;
+  color: #858597;
+  cursor: pointer;
+}
+.loading {
+  position: absolute;
+  right: 62px;
+  bottom: 15px;
+  animation: quay linear 1s infinite;
+}
+@keyframes quay {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.search-btn {
+  border: none;
+  font-size: 22px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 0 15px;
+  color: #9a9b9e;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60%;
+    background-color: #bbb1b1;
+    position: absolute;
+    left: 0;
+  }
+  &:hover {
+    background-color: #d4ccdb;
+  }
+}
+
+.videocontrol {
+  height: 45px;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.6); //
+  width: 320px;
+  z-index: 3;
+  &:focus-within {
+    background-color: transparent;
+  }
+  input {
+    color: #fff;
+    caret-color: red; // la cai cay nhay nhay khi bam vao input
+  }
+  .search-btn {
+    color: rgba(255, 255, 255, 0.7);
+    &::before {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  input:valid ~ .search-btn {
+    color: var(--while);
+  }
+  .clear {
+    color: #fff;
+  }
+}

@@ -1,0 +1,46 @@
+.wrapper {
+  width: var(--default-layout-sidebar-width);
+  padding: 20px 0 28px 8px;
+  position: fixed;
+  height: 560px;
+  overflow-y: auto;
+  z-index: 9;
+}
+.wrapper::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+.wrapper:hover::-webkit-scrollbar {
+  display: block;
+}
+.register {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.effect {
+  width: 235px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  img {
+    width: 100%;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 170px;
+    color: #fff;
+    font-weight: 600;
+    font-family: var(--tiktok-font);
+  }
+}

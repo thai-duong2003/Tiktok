@@ -1,0 +1,70 @@
+button {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.inputMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  label {
+    margin-right: 14px;
+    font-weight: 500;
+  }
+
+  .inputMain_wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgba(22, 24, 35, 0.06);
+
+    input {
+      background-color: transparent;
+      font-size: 17px;
+      height: 35px;
+      flex: 1;
+    }
+  }
+  .error {
+    font-size: 15px;
+    color: red;
+    margin: 5px 0 5px 36% !important;
+    font-weight: 450;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+  }
+}
+.logInUser_wrapper-footer {
+  text-align: center;
+  button {
+    background-color: var(--primary);
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+// editprofile
+.inputMain.editprofile {
+  margin-bottom: 5px;
+  .inputMain_wrapper {
+    width: 100%;
+    border: initial;
+    padding: 0;
+    input {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+  }
+  .error {
+    margin: 0 !important;
+  }
+}

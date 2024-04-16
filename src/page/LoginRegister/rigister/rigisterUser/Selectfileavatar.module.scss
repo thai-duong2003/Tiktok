@@ -1,0 +1,30 @@
+.avatarblock {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  input {
+    position: absolute;
+    right: 100%;
+    display: none;
+  }
+}
+span.selectfileicon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 7%;
+  background-color: #fff;
+  padding: 2px 7px;
+  border-radius: 50%;
+  border: 1px solid #938e8e;
+}
