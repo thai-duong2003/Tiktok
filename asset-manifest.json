@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tiktok/static/css/main.7d2f21c2.css",
-    "main.js": "/Tiktok/static/js/main.af2ef825.js",
+    "main.js": "/Tiktok/static/js/main.f269d57d.js",
     "static/js/787.474c25a6.chunk.js": "/Tiktok/static/js/787.474c25a6.chunk.js",
     "static/media/Download2.mp4": "/Tiktok/static/media/Download2.8f32443902cd5deeaf10.mp4",
     "static/media/backgrought_nopage.png": "/Tiktok/static/media/backgrought_nopage.532e06c8382fb6011df0.png",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/Tiktok/static/media/logo.14788dbb20dc655d0dbaac43503d6b98.svg",
     "index.html": "/Tiktok/index.html",
     "main.7d2f21c2.css.map": "/Tiktok/static/css/main.7d2f21c2.css.map",
-    "main.af2ef825.js.map": "/Tiktok/static/js/main.af2ef825.js.map",
+    "main.f269d57d.js.map": "/Tiktok/static/js/main.f269d57d.js.map",
     "787.474c25a6.chunk.js.map": "/Tiktok/static/js/787.474c25a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d2f21c2.css",
-    "static/js/main.af2ef825.js"
+    "static/js/main.f269d57d.js"
   ]
 }
