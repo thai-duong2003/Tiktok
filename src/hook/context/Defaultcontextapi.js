@@ -8,7 +8,7 @@ export const Appcontext = createContext("");
 function ContexApi({ children }) {
   // frofile and search
   const [search_user_click, setsearch_user_click] = useState(
-    document.location.pathname
+    document.location.pathname.slice(7)
   );
   const [detailluserlogin, setdetailluserlogin] = useState("");
   const [data_login_success, setdata_login_success] = useState(false);

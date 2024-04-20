@@ -81,7 +81,7 @@ function HomeHeaderItem({ data, className, id_current_user }) {
     <div className={cx("wrapper", { [className]: className })}>
       <div className={cx("user")}>
         <Accprevi>
-          <Link to={`@${datauser.nickname}`} onClick={handleclick_user}>
+          <Link to={`/Tiktok/@${datauser.nickname}`} onClick={handleclick_user}>
             <Image
               className={cx("avatar")}
               src={IPHTTP + datauser.avatar}
@@ -91,7 +91,10 @@ function HomeHeaderItem({ data, className, id_current_user }) {
 
         <div className={cx("info")}>
           <Accprevi name>
-            <Link to={`/@${datauser.nickname}`} onClick={handleclick_user}>
+            <Link
+              to={`/Tiktok/@${datauser.nickname}`}
+              onClick={handleclick_user}
+            >
               <p className={cx("name")}>
                 <strong>{datauser.nickname}</strong>
                 {datauser.tick === "true" && (

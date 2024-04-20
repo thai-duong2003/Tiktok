@@ -25,7 +25,7 @@ function Acountitem({ data }) {
           </div>
         )}
       >
-        <Link to={`/@${data.nickname}`} className={cx("acount-item")}>
+        <Link to={`/Tiktok/@${data.nickname}`} className={cx("acount-item")}>
           <Image className={cx("avatar")} src={IPHTTP + data.avatar} />
           <div className={cx("item-info")}>
             <p className={cx("nickname")}>

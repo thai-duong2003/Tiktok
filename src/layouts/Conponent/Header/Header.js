@@ -57,7 +57,7 @@ function Header() {
     {
       icon: <FontAwesomeIcon icon={faCircleQuestion} />,
       title: "Feedback and help",
-      to: "/feedback",
+      to: "/Tiktok/feedback",
     },
     {
       icon: <FontAwesomeIcon icon={faKeyboard} />,
@@ -69,23 +69,23 @@ function Header() {
     {
       icon: <FontAwesomeIcon icon={faUser} />,
       title: "view profile",
-      to: `/@${detailluserlogin && detailluserlogin.nickname}`,
+      to: `/Tiktok/@${detailluserlogin && detailluserlogin.nickname}`,
     },
     {
       icon: <FontAwesomeIcon icon={faCoins} />,
       title: "Get coins",
-      to: "/feedback",
+      to: "/Tiktok/feedback",
     },
     {
       icon: <FontAwesomeIcon icon={faGear} />,
       title: "Setting",
-      to: "/settings",
+      to: "/Tiktok/settings",
     },
     ...MENU_ITEMS,
     {
       icon: <FontAwesomeIcon icon={faSignOut} />,
       title: "log out",
-      // to: "/logout",
+      // to: "/Tiktok/logout",
       ref: "atc",
       separate: true,
     },
@@ -108,7 +108,7 @@ function Header() {
             <>
               {" "}
               <Tippy content="Upload video" placement="bottom" delay={[0, 200]}>
-                <Link to={"/upload"}>
+                <Link to={"/Tiktok/upload"}>
                   <button className={cx("action-btn")}>
                     <UploadIcon />
                   </button>

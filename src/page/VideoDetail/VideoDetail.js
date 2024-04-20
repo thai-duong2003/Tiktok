@@ -54,8 +54,8 @@ function VideoDetail() {
     var videoref = videoblockref.current.querySelector("video");
   }
 
-  var pathname = document.location.pathname.slice(1);
-
+  var pathname = document.location.pathname.slice(7);
+  console.log(pathname);
   // call get an video api
 
   useEffect(() => {
@@ -276,7 +276,7 @@ function VideoDetail() {
                   return (
                     <Link
                       key={index}
-                      to={`/videos/${item.id}`}
+                      to={`/Tiktok/videos/${item.id}`}
                       className={cx("creatitem")}
                       onClick={() => {
                         setdatavideo(item);

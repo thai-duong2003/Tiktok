@@ -21,7 +21,7 @@ function Home() {
     };
     fetchApi();
   }, [page, likeBtn]);
-  backpage("/");
+  backpage("/Tiktok");
   document.title = "TikTok - Make Your Day";
 
   return (

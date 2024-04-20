@@ -38,7 +38,9 @@ function SearchResuil({}) {
             </h5>
             <Link
               ref={linkref}
-              to={`/Search/users${Searchkeyword && "?q=" + Searchkeyword}`}
+              to={`/Tiktok/Search/users${
+                Searchkeyword && "?q=" + Searchkeyword
+              }`}
             ></Link>
             {searchResult.map((item, index) => {
               return (

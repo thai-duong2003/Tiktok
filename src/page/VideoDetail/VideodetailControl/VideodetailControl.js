@@ -43,7 +43,7 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
   }, [indexNextID]);
 
   // kiểm tra xem index có vượt quá sl item trong mảng ko
-  if (profilepage.page !== "/") {
+  if (profilepage.page !== "/Tiktok") {
     if (indexNextID === data.length) {
       indexNextID = 0;
     }
@@ -51,10 +51,7 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
 
   return (
     <div className={cx("wrappercontrol")}>
-      <Link
-        to={profilepage.istrue ? `${profilepage.page}` : "/"}
-        className={cx("close", "btn")}
-      >
+      <Link to={`${profilepage.page}`} className={cx("close", "btn")}>
         <FontAwesomeIcon icon={faXmark} />
       </Link>
       <Search className={"videocontrol"} />
@@ -77,7 +74,7 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
               </span>
             ) : (
               <Link
-                to={`/videos/${
+                to={`/Tiktok/videos/${
                   data &&
                   indexPreVideoID !== undefined &&
                   data[indexPreId] !== undefined
@@ -100,7 +97,7 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
             }}
           >
             <Link
-              to={`/videos/${
+              to={`/Tiktok/videos/${
                 data &&
                 indexNextVideoId !== undefined &&
                 data[indexNextID] !== undefined

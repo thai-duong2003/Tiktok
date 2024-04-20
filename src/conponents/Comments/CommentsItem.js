@@ -31,7 +31,7 @@ function CommentsItems({ data, className, atime }) {
   return (
     <div className={cx("wrapper", { [className]: className })}>
       <div className={cx("user")}>
-        <Link to={`/@${data.user.nickname}`}>
+        <Link to={`/Tiktok/@${data.user.nickname}`}>
           {" "}
           <Image
             className={cx("avatar")}
@@ -54,7 +54,7 @@ function CommentsItems({ data, className, atime }) {
                 );
               }}
             >
-              <Link to={`/@${data.user.nickname}`}>
+              <Link to={`/Tiktok/@${data.user.nickname}`}>
                 <div style={{ display: "inline-block" }}>
                   <p className={cx("name")}>{data.user.name}</p>
                   {data.user.tick === "true" && (

@@ -72,7 +72,7 @@ function Video({ data }) {
         onMouseOver={() => setishover(true)}
         onMouseOut={() => setishover(false)}
       >
-        <Link to={`/videos/${data.id}`}>
+        <Link to={`/Tiktok/videos/${data.id}`}>
           <video
             loop
             ref={videoref}

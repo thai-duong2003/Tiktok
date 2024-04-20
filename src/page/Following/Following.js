@@ -26,7 +26,7 @@ function Following() {
   const [suggeser, setsuggeser] = useState();
   document.title =
     "Following - Watch videos from creators you follow | TikTok ";
-  backpage("/following");
+  backpage("/Tiktok/following");
   //call api get video list
   useEffect(() => {
     const fetchApi = async () => {

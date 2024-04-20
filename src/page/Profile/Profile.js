@@ -58,6 +58,7 @@ function Profile() {
   const isfollow = false;
   const video = () => setisvideo(true);
   const lock = () => setisvideo(false);
+
   useEffect(() => {
     const fetchApi = async () => {
       try {
@@ -69,7 +70,7 @@ function Profile() {
     };
     fetchApi();
   }, [search_user_click, recallapi]);
-  nickuser && backpage(`/@${nickuser.nickname}`);
+  nickuser && backpage(`/Tiktok/@${nickuser.nickname}`);
 
   nickuser &&
     (document.title = `${nickuser.name} (@${nickuser.nickname}) | TikTok`);
@@ -110,7 +111,7 @@ function Profile() {
     // ẩn register sau khi dang nhap thanh cong
     hideshowRegister();
   }
-  console.log(nickuser);
+
   return (
     <div className={cx("wrapper")}>
       {nickuser === undefined ? (
@@ -273,7 +274,7 @@ function Profile() {
                     return (
                       <Link
                         key={index}
-                        to={`/videos/${item.id}`}
+                        to={`/Tiktok/videos/${item.id}`}
                         className={cx("video-item")}
                       >
                         <VideoTag

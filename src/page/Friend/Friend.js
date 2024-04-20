@@ -14,7 +14,7 @@ function Friend({}) {
   const { likeBtn, detailluserlogin } = useContext(Appcontext);
 
   document.title = "TikTok - Make Your Day";
-  backpage("/friends");
+  backpage("/Tiktok/friends");
   //call api get video list
   useEffect(() => {
     const fetchApi = async () => {

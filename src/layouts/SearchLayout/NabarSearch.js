@@ -13,14 +13,14 @@ function NabarSearch({}) {
     <div className={cx("nav-pills", "nav")}>
       <div className={cx("nav-item")}>
         <MenuItemSidebar
-          to={`/Searchs${Searchkeyword && "?q=" + Searchkeyword}`}
+          to={`/Tiktok/Searchs${Searchkeyword && "?q=" + Searchkeyword}`}
           title={"Top"}
           className={"searchResuilpage"}
         />
       </div>
       <div className={cx("nav-item")}>
         <MenuItemSidebar
-          to={`/Search/users${Searchkeyword && "?q=" + Searchkeyword}`}
+          to={`/Tiktok/Search/users${Searchkeyword && "?q=" + Searchkeyword}`}
           title={" Tài khoản"}
           className={"searchResuilpage"}
         />
@@ -28,7 +28,7 @@ function NabarSearch({}) {
       <div className={cx("nav-item")}>
         {" "}
         <MenuItemSidebar
-          to={`/Search/video${Searchkeyword && "?q=" + Searchkeyword}`}
+          to={`/Tiktok/Search/video${Searchkeyword && "?q=" + Searchkeyword}`}
           title={" Video"}
           className={"searchResuilpage"}
         />

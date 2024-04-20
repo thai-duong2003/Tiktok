@@ -11,43 +11,43 @@ function Live() {
   const nabar = [
     {
       title: "For you",
-      link: "/live",
+      link: "/Tiktok/live",
     },
     {
       title: "Following",
-      link: "/live/Following",
+      link: "/Tiktok/live/Following",
     },
     {
       title: "Gaming",
-      link: "/live/Gaming",
+      link: "/Tiktok/live/Gaming",
     },
     {
       title: "LifeStyle",
-      link: "/live/LifeStyle",
+      link: "/Tiktok/live/LifeStyle",
     },
     {
       title: "Arena Of Valor",
-      link: "/live/Arena_Of_Valor",
+      link: "/Tiktok/live/Arena_Of_Valor",
     },
     {
       title: "Dota 2",
-      link: "/live/Dota_2",
+      link: "/Tiktok/live/Dota_2",
     },
     {
       title: "League of Legends",
-      link: "/live/League_of_Legends",
+      link: "/Tiktok/live/League_of_Legends",
     },
     {
       title: "WolfTeam",
-      link: "/live/WolfTeam",
+      link: "/Tiktok/live/WolfTeam",
     },
     {
       title: "Call Of Duty",
-      link: "/live/Call_Of_Duty",
+      link: "/Tiktok/live/Call_Of_Duty",
     },
     {
       title: "WolfTeam",
-      link: "/live/WolfTeam",
+      link: "/Tiktok/live/WolfTeam",
     },
   ];
   return (

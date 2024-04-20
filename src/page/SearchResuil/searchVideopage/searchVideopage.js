@@ -53,7 +53,10 @@ function SearchVideopage({}) {
               searchResuiltlist.map((item, index) => {
                 return (
                   <div key={index} className={cx(" col-sm-4", "item_video")}>
-                    <Link className={cx("item")} to={`/videos/${item.id}`}>
+                    <Link
+                      className={cx("item")}
+                      to={`/Tiktok/videos/${item.id}`}
+                    >
                       <VideoTag
                         src={IPHTTP + item.file_url}
                         className="searchPage"

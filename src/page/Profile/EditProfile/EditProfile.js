@@ -52,7 +52,7 @@ function EditProfile({ onclick }) {
   };
   return (
     <div className={cx("", "")} onClick={onclick}>
-      <Link ref={reflink} to={`/@${nickname}`} />
+      <Link ref={reflink} to={`/Tiktok/@${nickname}`} />
       <div className={cx("wrapper")}></div>
       <div
         className={cx("block")}

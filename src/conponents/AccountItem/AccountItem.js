@@ -17,7 +17,7 @@ function AccountItem({ data, className, showfl = false }) {
   };
   return (
     <Link
-      to={`/@${data.nickname}`}
+      to={`/Tiktok/@${data.nickname}`}
       className={cx("wrapper", { [className]: className })}
       onClick={clickaccount}
     >

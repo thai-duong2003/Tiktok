@@ -78,7 +78,7 @@ function Sidebar() {
         />
         <MenuItemSidebar
           title={"Explore"}
-          to={"/Explores"}
+          to={"/Tiktok/Explores"}
           icon={<Khamphaicon />}
           activeicon={<Khamphaiconactive />}
           onclick={() => {
@@ -100,7 +100,9 @@ function Sidebar() {
         >
           <MenuItemSidebar
             to={
-              detailluserlogin ? `/@${detailluserlogin.nickname}` : "/profile"
+              detailluserlogin
+                ? `/Tiktok/@${detailluserlogin.nickname}`
+                : "/Tiktok/profile"
             }
             image
             onclick={handleclickshowRegister}

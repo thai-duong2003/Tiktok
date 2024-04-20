@@ -122,7 +122,10 @@ function Search({ className }) {
             inputref.current.blur();
           }}
         >
-          <Link ref={linktosearchpage} to={`/Searchs?q=${searchvalue}`}></Link>
+          <Link
+            ref={linktosearchpage}
+            to={`/Tiktok/Searchs?q=${searchvalue}`}
+          ></Link>
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
       </div>

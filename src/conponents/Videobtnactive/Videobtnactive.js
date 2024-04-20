@@ -104,7 +104,7 @@ function Videobtnactive({
                 {item.icon}
               </Button>{" "}
               <p>{item.title}</p>
-              <Link to={`/videos/${data.id}`} ref={linkelement}></Link>
+              <Link to={`/Tiktok/videos/${data.id}`} ref={linkelement}></Link>
             </div>
           );
         } else {

@@ -15,9 +15,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { Uploadservice } from "~/Services/VideoService/uploadservices";
 
-import axios from "axios";
-import { Link } from "react-router-dom";
-
 const cx = classNames.bind(styles);
 function Upload({ sa }) {
   const Data = {
