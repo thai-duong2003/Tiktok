@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Tiktok/static/css/main.7d2f21c2.css",
+    "main.css": "/Tiktok/static/css/main.03fdb2a1.css",
     "main.js": "/Tiktok/static/js/main.6668c4df.js",
     "static/js/787.474c25a6.chunk.js": "/Tiktok/static/js/787.474c25a6.chunk.js",
     "static/media/Download2.mp4": "/Tiktok/static/media/Download2.8f32443902cd5deeaf10.mp4",
@@ -15,12 +15,12 @@
     "static/media/Proxima-Nova-Semibold.woff2": "/Tiktok/static/media/Proxima-Nova-Semibold.c5632e80f6e35c93156f.woff2",
     "static/media/logo.svg": "/Tiktok/static/media/logo.14788dbb20dc655d0dbaac43503d6b98.svg",
     "index.html": "/Tiktok/index.html",
-    "main.7d2f21c2.css.map": "/Tiktok/static/css/main.7d2f21c2.css.map",
+    "main.03fdb2a1.css.map": "/Tiktok/static/css/main.03fdb2a1.css.map",
     "main.6668c4df.js.map": "/Tiktok/static/js/main.6668c4df.js.map",
     "787.474c25a6.chunk.js.map": "/Tiktok/static/js/787.474c25a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d2f21c2.css",
+    "static/css/main.03fdb2a1.css",
     "static/js/main.6668c4df.js"
   ]
 }
