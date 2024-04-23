@@ -33,6 +33,8 @@ function SuggessFollowaccount({
       fetchApi();
     }
   }, [page, detailluserlogin]);
+  console.log(suggesteUsers);
+  console.log(1211313);
   return (
     <div className={cx("suggestfollow", "container")} onClick={() => {}}>
       <div className={cx("row")}>

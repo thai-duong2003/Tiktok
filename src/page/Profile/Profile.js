@@ -37,7 +37,7 @@ import FollowBtn from "./Follow/FollowBtn";
 import { CheckArray } from "../Home/Checkfollow";
 import EditProfile from "./EditProfile/EditProfile";
 
-export let profilepage = { istrue: true, page: "/" };
+export let profilepage = { istrue: true, page: "/Tiktok/" };
 
 const cx = classNames.bind(styles);
 export function backpage(page) {

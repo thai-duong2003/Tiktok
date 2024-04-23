@@ -48,7 +48,6 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
       indexNextID = 0;
     }
   }
-
   return (
     <div className={cx("wrappercontrol")}>
       <Link to={`${profilepage.page}`} className={cx("close", "btn")}>

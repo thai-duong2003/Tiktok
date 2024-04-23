@@ -43,7 +43,7 @@ function Volume({ element, classnames }) {
     // element.volume = config.volumValue;
   };
   useEffect(() => {
-    element.volume = valuevo;
+    element.volume = valuevo ? valuevo : 0;
   }, [config.volumValue]);
 
   element.muted = ismuted;

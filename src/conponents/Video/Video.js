@@ -42,7 +42,7 @@ function Video({ data }) {
         videoClientRect <= windowHeight - videoHeight * 0.5 &&
         videoClientRect >= 0 - videoHeight * 0.5
       ) {
-        videoTag.volume = config.volumValue;
+        videoTag.volume = config.volumValue ? config.volumValue : 0;
         videoTag.play();
         setisplay(true);
       } else {

@@ -1,5 +1,5 @@
 import axios from "axios";
-export var IPHTTP = "http://quangthai2003.id.vn/"; //localhost
+export var IPHTTP = "https://quangthai2003.id.vn/"; // https://quangthai2003.id.vn/
 const httprequest = axios.create({
   baseURL: `${IPHTTP}public/api/`,
 });

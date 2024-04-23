@@ -40,11 +40,11 @@ function Following() {
     };
     detailluserlogin && fetchApi();
   }, [page, likeBtn]);
-
+  console.log(config.token_login);
   return (
     <div className={cx("wrapper")} style={{ width: "650px" }}>
-      {config.token_login === "" ? (
-        <SuggessFollowaccount setshowregister={setshowregister} />
+      {config.token_login === "" || config.token_login === undefined ? (
+        <SuggessFollowaccount call setshowregister={setshowregister} />
       ) : video.length > 1 ? (
         <Contentmain video={video} page={page} setpage={setpage} />
       ) : (
