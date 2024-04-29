@@ -26,11 +26,10 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
 
   let indexNextID;
   let indexPreId;
-
   // tìm xem idvideo hiện tại đang ở index bao nhiêu trong mang
   data &&
     data.find((item, index) => {
-      if (item.id === currentVideo) {
+      if (Number(item.id) === currentVideo) {
         indexNextID = index + 1;
         indexPreId = index - 1;
       }
@@ -43,11 +42,12 @@ function VideodetailControl({ videoelement, data, currentVideo, nexpage }) {
   }, [indexNextID]);
 
   // kiểm tra xem index có vượt quá sl item trong mảng ko
-  if (profilepage.page !== "/Tiktok") {
+  if (profilepage.page !== "/Tiktok/") {
     if (indexNextID === data.length) {
       indexNextID = 0;
     }
   }
+
   return (
     <div className={cx("wrappercontrol")}>
       <Link to={`${profilepage.page}`} className={cx("close", "btn")}>

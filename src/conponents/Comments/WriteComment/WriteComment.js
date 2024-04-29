@@ -31,9 +31,7 @@ function WriteComment({ videoid, onclick, recallcomment }) {
           videoid
         );
         btnlikeactive();
-      } catch (err) {
-        console.log(err);
-      }
+      } catch (err) {}
       inutref.current.innerText = "";
       recallcomment();
       if (inutref.current.innerText.trim().length === 0) {

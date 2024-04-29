@@ -40,7 +40,6 @@ function Following() {
     };
     detailluserlogin && fetchApi();
   }, [page, likeBtn]);
-  console.log(config.token_login);
   return (
     <div className={cx("wrapper")} style={{ width: "650px" }}>
       {config.token_login === "" || config.token_login === undefined ? (

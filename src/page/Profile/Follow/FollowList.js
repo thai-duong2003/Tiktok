@@ -60,7 +60,6 @@ function FollowList({ currentuser, onclick, followtype, setfollowtype }) {
   } else {
     datalist = data;
   }
-  console.log(friendlist);
   return (
     <div className={cx("wrapper")} onClick={onclick}>
       <div
@@ -133,7 +132,6 @@ function FollowList({ currentuser, onclick, followtype, setfollowtype }) {
                   friendlist && friendlist,
                   item && item.id
                 );
-                console.log(check_follow);
                 const followtypeText = () => {
                   switch (followtype) {
                     case 2: {

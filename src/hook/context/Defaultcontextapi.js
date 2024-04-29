@@ -79,7 +79,6 @@ function ContexApi({ children }) {
       setlikeBtn(true);
     }
   };
-  // console.log(listLikeduser);
   return (
     <Appcontext.Provider
       value={{

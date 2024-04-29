@@ -41,8 +41,6 @@ function EditProfile({ onclick }) {
     };
     userName && nickname && clicksavebtn && callapi();
   }, [clicksavebtn]);
-  console.log(clicksavebtn);
-  console.log(avatar);
   const handlesavebtn = () => {
     if (clicksavebtn) {
       setclicksavebtn(false);

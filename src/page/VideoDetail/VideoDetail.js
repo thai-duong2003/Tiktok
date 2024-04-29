@@ -55,7 +55,7 @@ function VideoDetail() {
   }
 
   var pathname = document.location.pathname.slice(7);
-  console.log(pathname);
+
   // call get an video api
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function VideoDetail() {
       const resuilt = await userServices.Video({ page: page });
       setvideolis(resuilt);
     };
-    profilepage.page === "/" && fetchApi();
+    profilepage.page === "/Tiktok/" && fetchApi();
   }, [page]);
 
   //call api get video following list
@@ -96,7 +96,7 @@ function VideoDetail() {
       });
       setvideolis(resuilt);
     };
-    profilepage.page === "/following" && detailluserlogin && fetchApi();
+    profilepage.page === "/Tiktok/following" && detailluserlogin && fetchApi();
   }, [page, detailluserlogin]);
 
   //call api get video friend list
@@ -108,7 +108,7 @@ function VideoDetail() {
       });
       setvideolis(resuilt);
     };
-    profilepage.page === "/friends" && detailluserlogin && fetchApi();
+    profilepage.page === "/Tiktok/friends" && detailluserlogin && fetchApi();
   }, [page, detailluserlogin]);
 
   // call Comment api
@@ -151,19 +151,14 @@ function VideoDetail() {
 
   // kiểm tra từ đâu vào để lấy ra list video
   const VideoListwhenclicknexvideo = () => {
-    // if (profilepage.page === "/") {
-    //   return videolis && videolis;
-    // } else {
-    //   return videocreattor && videocreattor;
-    // }
     switch (profilepage.page) {
-      case "/":
+      case "/Tiktok/":
         return videolis && videolis;
         break;
-      case "/following":
+      case "/Tiktok/following":
         return videolis && videolis;
         break;
-      case "/friends":
+      case "/Tiktok/friends":
         return videolis && videolis;
         break;
       default:

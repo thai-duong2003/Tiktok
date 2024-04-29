@@ -20,8 +20,7 @@ function Deleteblock({ onclick, id_video, id_user }) {
   }, [deleteVideo]);
   if (callapi) {
     setTimeout(() => {
-      console.log(callapi);
-      document.location = "/";
+      document.location = "/Tiktok/";
     }, 300);
   }
   const handle_click_btn_delete = () => {
